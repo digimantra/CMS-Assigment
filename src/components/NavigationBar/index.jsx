@@ -35,7 +35,7 @@ const NavigationBar = () => {
   return (
     <header className="header">
       <img
-        src="/src/assets/all-purpose-banner.jpg"
+        src="/assets/all-purpose-banner.jpg"
         alt="Logo"
         className="header-banner"
       />
