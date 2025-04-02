@@ -1,0 +1,73 @@
+.complaint-container {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  .error-div{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding-top: 8px;
+    svg{
+      fill: red;
+      width: 14px;
+      height: 14px;
+      flex: none;
+    }
+    .error-message{
+      font-size: 14px;
+      color: red;
+      margin-block: 0;
+    }
+  }
+  h1 {
+    font-size: 25px;
+    color: #212529;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 24px;
+    color: black;
+    font-weight: 700;
+    margin: 0;
+  }
+  h4 {
+    margin: 0;
+    font-size: 20px;
+    color: #222222;
+    font-weight: 500;
+    line-height: 21px;
+  }
+  .list-item {
+    display: flex;
+    gap: 6px;
+    p {
+      margin: 0;
+      font-size: 12px;
+    }
+  }
+  .radio-input {
+    width: 13px;
+    height: 13px;
+    flex: none;
+  }
+  .button-section {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 12px;
+    padding-top: 36px;
+    padding-bottom: 24px;
+    @media screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 24px;
+      a,button{
+        width: 100%;
+      }
+    }
+    .welcome-button {
+      svg {
+        margin-right: 4px;
+      }
+    }
+  }
+}

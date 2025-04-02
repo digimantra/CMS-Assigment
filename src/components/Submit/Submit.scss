@@ -1,0 +1,57 @@
+.submit-container {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 12px;
+  gap: 8px;
+  .heading {
+    font-size: 25px;
+    color: #337ab7;
+    font-weight: bolder;
+  }
+  h2 {
+    font-size: 20px;
+    color: #337ab7;
+    font-weight: 500;
+    span {
+      font-weight: bolder;
+    }
+  }
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 16px;
+    color: #212529;
+    p {
+      margin: 0;
+    }
+    a {
+        color: rgb(13, 110, 253);
+      }
+      a:hover {
+        color: rgb(10, 88, 202);
+      }
+  }
+  .button-section {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 12px;
+    padding-top: 36px;
+    background-color: white;
+    padding-bottom: 24px;
+    @media screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 24px;
+      a,
+      button {
+        width: 100%;
+      }
+    }
+    .welcome-button {
+      svg {
+        margin-right: 4px;
+      }
+    }
+  }
+}

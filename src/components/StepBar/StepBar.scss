@@ -1,0 +1,37 @@
+.stepbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #666;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-block: 24px;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.step {
+  flex: 1;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  transition: background 0.3s ease;
+  font-weight: 400;
+  border-right: 1px solid #dcdcdc;
+}
+.step:last-child {
+  border-right: none;
+}
+
+.step.active {
+  background: #ffc107;
+}
+
+.step.completed {
+  background: #198754;
+}
+
+.step:not(.active):not(.completed) {
+  background: #6c757d;
+}

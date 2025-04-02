@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 12px;
+  margin-bottom: 24px;
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    a {
+      color: rgb(13, 110, 253);
+    }
+    a:hover {
+      color: rgb(10, 88, 202);
+    }
+  }
+}

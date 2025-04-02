@@ -1,0 +1,135 @@
+.review-container {
+  padding-inline: 12px;
+  display: flex;
+  flex-direction: column;
+  .error-message {
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 12px;
+  }
+  h1 {
+    font-size: 25px;
+    color: #212529;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 28px;
+    color: #212529;
+    margin: 0;
+    padding-block: 16px;
+    padding-left: 8px;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  .button-section {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 12px;
+    padding-top: 36px;
+    background-color: white;
+    padding-bottom: 24px;
+    @media screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 24px;
+      a,
+      button {
+        width: 100%;
+      }
+    }
+    .welcome-button {
+      svg {
+        margin-right: 4px;
+      }
+    }
+  }
+  .form-container {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    .flex-box {
+      display: flex;
+      border-bottom: 0.8px solid rgb(222, 226, 230);
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        border-bottom: 0;
+      }
+    }
+    .row {
+      display: flex;
+      gap: 16px;
+      padding: 8px;
+      min-height: 56px;
+      width: 50%;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        border-bottom: 0.8px solid rgb(222, 226, 230);
+      }
+      .value {
+        margin: 0;
+      }
+      &:nth-child(even) {
+        background-color: white;
+      }
+      .left-column {
+        width: 40%;
+        .value {
+          margin: 0;
+        }
+      }
+    }
+  }
+  .form-label {
+    font-weight: bold;
+    display: block;
+    margin: 0;
+    font-size: 16px;
+    color: black;
+    span {
+      color: #ae0606;
+    }
+  }
+  .form-input-label {
+    font-weight: 600;
+    display: block;
+    margin: 0;
+    font-size: 16px;
+    color: black;
+    span {
+      color: #ae0606;
+    }
+  }
+
+  .radio-group {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+    .radio-input {
+      width: 13px;
+      height: 13px;
+    }
+  }
+
+  .form-description {
+    font-size: 12px;
+    margin-bottom: 15px;
+    span {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+
+  .form-body {
+    display: flex;
+    flex-direction: column;
+    // background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .form-input,
+  .form-select {
+    width: 40%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin: 0;
+  }
+}
